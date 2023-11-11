@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+z<!DOCTYPE html>
 <html lang="en">
   <!-- Head -->
   <head>    <!-- Metadata, OpenGraph and Schema.org -->
@@ -29,6 +29,9 @@
     <!-- <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
 	
     <link rel="stylesheet" href="/assets/css/main.css"> -->
+    <script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
     
     <!-- Dark Mode -->
     
@@ -37,6 +40,14 @@
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/dark_mode.js"></script> -->
     
+	  <script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	    tex2jax: {
+	      inlineMath: [['$', '$'], ['\\(', '\\)']],
+	      processEscapes: true
+	    }
+	  });
+	</script>
   </head>
 
   <!-- Body -->
@@ -155,7 +166,40 @@ and computer science.</p>
 	<h1>Projects</h1>
 	<p>Here is a preview of some of the projects I have done. A more detailed list is available <a href="https://antoinertk.wixsite.com/index/projects" target="_blank">here</a>.<p>
 	<div class="table-responsive">
-	  <table class="table table-sm table-borderless"> 
+	  <table class="table table-sm table-borderless">
+		<tr>
+		  <td class="image-column">
+			<a href="https://hal.science/file/index/docid/476064/filename/TexturesECCV10.pdf" target="_blank">
+			  <img src="texture.png" alt="Texture mixing" width="600" height="171">
+			</a>
+		  </td>
+		  <td>
+			<strong><a href="https://hal.science/file/index/docid/476064/filename/TexturesECCV10.pdf" target="_blank" style="font-size: 200%;">Wasserstein Barycenter and its Application to Texture Mixing</a></strong> December 2023
+			<p style="font-size: 110%;">
+			In this work, we explore the paper done by Julien Rabin et al. to perform texture mixing with Wasserstein Barycenter.
+			We propose new techniques to improve the synthesis of texture and compare the results with other methods.
+			Project done at the MVA. In Progress.
+			<a href="#" target="_blank">[Paper]</a>
+			<p>
+		  </td>
+		</tr>
+		  <tr>
+		  <td class="image-column">
+			<a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/3001ef257407d5a371a96dcd947c7d93-Paper.pdf" target="_blank">
+			  <img src="score.png" alt="score matching diffusion model" width="600" height="171">
+			</a>
+		  </td>
+		  <td>
+			<strong><a href="https://proceedings.neurips.cc/paper_files/paper/2019/file/3001ef257407d5a371a96dcd947c7d93-Paper.pdf" target="_blank" style="font-size: 200%;">Denoising score matching for diffusion models</a></strong> December 2023
+			<p style="font-size: 110%;">
+			Diffusion models have shown impressive results on many tasks such as image generation or denoising.
+			In this paper, we investigate how to approximate the <em>score</em> of a probability distribution \(p(x)\).
+			The <em>score</em> of this distribution is characterized by \(\nabla_x \log(p(x))\).
+			Project done at the MVA. In Progress.
+			<a href="#" target="_blank">[Paper]</a>
+			<p>
+		  </td>
+		</tr>
 		<tr>
 		  <td class="image-column">
 			<a href="https://antoinertk.github.io/files/FPR.pdf" target="_blank">
@@ -163,9 +207,12 @@ and computer science.</p>
 			</a>
 		  </td>
 		  <td>
-			<strong><a href="https://antoinertk.github.io/files/FPR.pdf" style="font-size: 200%;">Diffusion Det</a></strong> January 2023
+			<strong><a href="https://antoinertk.github.io/files/FPR.pdf" target="_blank" style="font-size: 200%;">Diffusion Det</a></strong> January 2023
 			<p style="font-size: 110%;">
-			DiffusionDet is an architecture made for object detection based on diffusion models developed by Soufa Chen. In this project, we tried to improve the object tracking system by using a prior distribution on the boxes from the previous frame. We then evaluated the performances on the MOT16 dataset. We also tried to implement SIFT for object tracking.
+			DiffusionDet is an architecture made for object detection based on diffusion models developed by Soufa Chen.
+			In this project, we tried to improve the object tracking system by using a prior distribution on the boxes from the previous frame.
+			We then evaluated the performances on the MOT16 dataset. We also tried to implement SIFT for object tracking.
+			<a href="https://antoinertk.github.io/files/FPR.pdf" target="_blank">[Paper]</a>
 			<p>
 		  </td>
 		</tr>
@@ -189,7 +236,7 @@ and computer science.</p>
 	<td>
 	<strong><a href="https://drive.google.com/file/d/12MWf-LRovPKpDMO63v-OBwf_f7zFXVbB/view?usp=sharing" style="font-size: 200%;">Critical regions prediction</a></strong> March 2023 - Today
 	<p style="font-size: 110%;">
-	At NYU, we are developing a model able to detect critical regions on the brain thanks to electrocorticography (ECoG).
+	At NYU, we are developing a model able to detect critical regions of the brain thanks to electrocorticography (ECoG).
 	We define critical regions as the parts of the brain that are stimulated and required when we perform tasks such
 	as speaking. The gold standard for identifying these regions has remained unchanged for many years and is known as
 	electrical stimulation mapping (ESM). However, this technique of brain stimulation carries the of after discharges
@@ -210,7 +257,7 @@ and computer science.</p>
 	<strong><a href="" style="font-size: 200%;">Classifying the state of sedation of patients in ICU</a></strong> November 2022 - February 2023
 	<p style="font-size: 110%;">
 	The aim of this study was to classify the state of sedation of patients during their hospitalizations in an
-	intensive care unit. The doctor judged between a "sedated" or "weakly sedated" state for each patient and proposes
+	intensive care unit. The doctor judged between a "sedated" or "weakly sedated" state for each patient and proposed
 	medication according to this state. By studying the electroencephalographic activity (EEG) of the patients, 
 	we have tried to classify these states. This work was supervised by Laurent Oudre and Clément Dubost.
 	<p>
@@ -223,11 +270,12 @@ and computer science.</p>
 	</a>
 	</td>
 	<td>
-	<strong><a href="https://antoinertk.github.io/files/Land.pdf" style="font-size: 200%;">Land's kernel</a></strong> April 2022 - July 2022
+	<strong><a href="https://antoinertk.github.io/files/Land.pdf" target="_blank" style="font-size: 200%;">Land's kernel</a></strong> April 2022 - July 2022
 	<p style="font-size: 110%;">
-	Kernels play an important role in image processing and computer vision. They are ubiquitous in our daily lifes,
-	and have many applications such as feature extraction or photomontage. In this work we will focus on Land’s kernel 
+	Kernels play an important role in image processing and computer vision. They are ubiquitous in our daily lives,
+	and have many applications such as feature extraction or photomontage. In this work, we will focus on Land’s kernel 
 	and its interesting properties. This work was supervised by Enric Meinhardt-Llopis.
+	<a href="https://antoinertk.github.io/files/Land.pdf" target="_blank">[Paper]</a>
 	<p>
 	</td>
 </tr>
