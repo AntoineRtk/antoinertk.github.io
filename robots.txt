@@ -6,3 +6,11 @@ Sitemap: https://spencerpao.github.io/sitemap.xml
 User-agent: Googlebot-Image
 Disallow: antoine*.jpg
 Disallow: antoine*.png
+Disallow: UMAPmix_p.png
+Disallow: diffdet.png
+Disallow: diffdet2.png
+Disallow: meta_gif.gif
+Disallow: meta_gif2.gif
+Disallow: lena.png
+Disallow: noise.gif
+Disallow: score.png
