@@ -77,11 +77,11 @@
 				<a class="nav-link" href="/">Home</a>
 			  </li>
 		      	  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#	" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Projects
 				</a>
 				<div class="dropdown-menu" aria-labelledby="projectsDropdown" style="border: 2px solid #dddddd;">
-					<a class="dropdown-item" style="color: #007bff;" href="#Projects">Projects</a>
+					<a class="dropdown-item" style="color: #007bff;" href="/projects.html">School Projects</a>
 					<a class="dropdown-item" style="color: #007bff;" href="/old.html">Old</a>
 				</div>
 	                 </li>
@@ -178,9 +178,10 @@
 
 <div class="clearfix">
 
-<p>Hello! I am Antoine, an incoming Machine Learning Engineer at . I recently graduated with a master's degree in mathematics and artificial intelligence from ENS Paris-Saclay.
-I also completed a research internship at <a target="_blank" href="https://ai.meta.com/">Meta</a> <img src="images/meta_gif2.gif" alt="Meta Logo" style="height:1em;vertical-align:middle; margin-top:-0.2em;">.
-Prior to that, I took a gap year during which I had the opportunity to be a visiting researcher at <a target="_blank" href="https://www.nyu.edu/">New York University</a>,
+<p>Hello! I am Antoine, an Applied Scientist at Amazon. I recently graduated with a master's degree in mathematics and artificial intelligence from ENS Paris-Saclay.
+I also completed a research internship at <a target="_blank" href="https://ai.meta.com/">Meta</a> <img src="images/meta_gif2.gif" alt="Meta Logo" style="height:1em;vertical-align:middle; margin-top:-0.2em;">
+in the Brain & AI team, supervised by Jean-Rémi King and Hubert J. Banville.
+Prior to that, I spent a gap year as a visiting researcher at <a target="_blank" href="https://www.nyu.edu/">New York University</a>,
 specifically at <a target="_blank" href="https://wp.nyu.edu/videolab/">NYU Video Lab</a> under the supervision of 
 <a target="_blank" href="https://engineering.nyu.edu/faculty/yao-wang">Yao Wang</a> and
 <a target="_blank" href="https://engineering.nyu.edu/faculty/adeen-flinker">Adeen Flinker</a>.
@@ -189,81 +190,6 @@ artificial intelligence. I also received a bachelor's degree from Gustave Eiffel
 
 <!-- <p>My research interests are the applications of AI to the medical field, notably in <b>neurosciences</b>. I am also interested in <b>computer vision</b>, <b>computer graphics</b> and <b>signal processing</b>. Recently, I have been emphasizing <b>pre-training</b> and exploring <b>cross-modality integration</b>.</p> -->
 <p>My research interests are <b>signal processing</b>, <b>computer vision</b> and their applications to the medical field, when possible. I am also interested in <b>pre-training</b> and <b>multimodal models</b>.</p>
-
-</div>         
-  <div class="Projects" id="Projects">
-	<h1>Projects</h1>
-	<!-- <p>Here are the most recent projects I have done. Old ones are available <a href="https://antoinertk.github.io/olds.html" target="_blank">here</a>.<p> -->
-	<div class="table-responsive">
-	  <table class="table table-sm table-borderless">
-		<tr>
-		  <td class="image-column" style="text-align: center;">
-			<a href="https://antoinertk.github.io/files/TextureMixing.pdf" target="_blank">
-			  <!-- <img src="texture.gif" alt="Texture mixing" width="450" height="337"> -->
-			       <img src="images/texture3.gif" alt="Texture mixing" width="400" height="280">
-			</a>
-		  </td>
-		  <td>
-			<strong><a href="https://antoinertk.github.io/files/TextureMixing.pdf" target="_blank" style="font-size: 150%;">Wasserstein Barycenter and its Application to Texture Mixing</a></strong> December 2023
-			<p style="font-size: 110%;">
-			In this study, we explore the work conducted by Julien Rabin et al. to perform texture mixing using Wasserstein Barycenter.
-			We try to reproduce the results and propose new techniques to enhance the texture synthesis.
-			[<a href="https://antoinertk.github.io/files/TextureMixing.pdf" style="color:blue; text-decoration:underline;" target="_blank">Paper</a>]
-			[<a href="https://github.com/AntoineRtk/TextureMixing" style="color:blue; text-decoration:underline;" target="_blank">Code</a>]
-			<p>
-		  </td>
-		</tr>
-		  <tr>
-		  <td class="image-column">
-			<a href="https://antoinertk.github.io/files/PGM.pdf" target="_blank">
-			  <img src="images/score.gif" alt="score matching diffusion model" width="400" height="114">
-			</a>
-		  </td>
-		  <td>
-			<strong><a href="https://antoinertk.github.io/files/PGM.pdf" target="_blank" style="font-size: 150%;">Denoising score matching for diffusion models</a></strong> December 2023
-			<p style="font-size: 110%;">
-			Diffusion models have shown impressive results on many tasks such as image generation, inpainting or denoising.
-			In this paper, we investigate how the <em>score</em> of a probability distribution \(p(x)\),
-			characterized by \(\nabla_x \log(p(x))\), can be used for these tasks.
-			[<a href="https://antoinertk.github.io/files/PGM.pdf" style="color:blue; text-decoration:underline;" target="_blank">Paper</a>]
-			<p>
-		  </td>
-		</tr>
-	  	<!--- <tr>
-		  <td class="image-column" style="text-align: center;">
-			<a href="https://browse.arxiv.org/pdf/2007.13640.pdf" target="_blank">
-			  <img src="noise.gif" alt="Denoising" width="400" height="300">
-			</a>
-		  </td>
-		  <td>
-			<strong><a href="https://browse.arxiv.org/pdf/2007.13640.pdf" target="_blank" style="font-size: 150%;">Solving Linear Inverse Problems Using the Prior Implicit in a Denoiser</a></strong> December 2023
-			<p style="font-size: 110%;">
-			In this work, we will examine an approach to image denoising and reconstruction by leveraging implicit prior probability from natural images.
-			Project at the MVA: in progress.
-			[<a href="#" style="color:blue; text-decoration:underline;" target="_blank">Paper</a>]
-			<p>
-		  </td>
-		</tr> -->
-		<tr>
-		  <td class="image-column" style="text-align: center;">
-			<a href="https://antoinertk.github.io/files/FPR.pdf" target="_blank">
-			  <img src="images/diffdet2.png" alt="Diffusion Det" width="246" height="184">
-			</a>
-		  </td>
-		  <td>
-			<strong><a href="https://antoinertk.github.io/files/FPR.pdf" target="_blank" style="font-size: 150%;">Diffusion Det</a></strong> January 2023
-			<p style="font-size: 110%;">
-			DiffusionDet is an architecture made for object detection based on diffusion models developed by Soufa Chen.
-			In this project, we tried to improve the object tracking system by using a prior distribution on the boxes from the previous frame.
-			We then evaluated the performances on the MOT16 dataset. We also tried to implement SIFT for object tracking.
-			[<a href="https://antoinertk.github.io/files/FPR.pdf" style="color:blue; text-decoration:underline;" target="_blank">Paper</a>]
-			<p>
-		  </td>
-		</tr>
-	  </table>
-	</div>
-  </div>
-</article>
 
 </div>
 
@@ -280,47 +206,14 @@ artificial intelligence. I also received a bachelor's degree from Gustave Eiffel
 	<td>
 	<strong><a href="https://drive.google.com/file/d/12MWf-LRovPKpDMO63v-OBwf_f7zFXVbB/view?usp=sharing" style="font-size: 150%;">Critical regions prediction</a></strong> March 2023 - Present
 	<p style="font-size: 110%;">
-	At New York University, we are developing a model able to detect critical regions of the brain thanks to electrocorticography (ECoG).
-	We define critical regions as the parts of the brain that are stimulated and required when we perform tasks such
-	as speaking. The gold standard for identifying these regions has remained unchanged for many years and is known as
-	electrical stimulation mapping (ESM). However, this technique of brain stimulation carries the risk of discharge
-	and seizures in both diseased and healthy tissue. In addition, this is often not well tolerated by pediatrics.
-	For these reasons, and many more we did not evoke, there is a crucial need to improve this method, which could
-	be beneficial for pre-surgery planning to ensure critical regions are not inadvertently resected.
+	At New York University, we are developing a model capable of detecting critical regions of the brain using electrocorticography (ECoG).
+	We define critical regions as the areas of the brain that are activated and necessary when performing tasks such
+	as speech. The gold standard for identifying these regions, electrical stimulation mapping (ESM) has remained unchanged
+	for many years. However, this technique of brain stimulation carries the risk of discharges and seizures in both
+	diseased and healthy tissue. In addition, this is often not well tolerated by pediatrics.
+	For these reasons, and others not mentioned here, there is a crucial need to improve this method. This could
+	benefit pre-surgical planning by helping ensure critical regions are not inadvertently resected.
 	This work is jointly supervised by Yao Wang and Adeen Flinker.
-	<p>
-	</td>
-</tr>
-<tr>
-	<td class="image-column" style="text-align: center;">
-	<a href="#" target="_blank">
-	  <img src="images/UMAPmix_p.png" alt="Classifying the state of a patient in intensive care unit" width="400" height="213">
-	</a>
-	</td>
-	<td>
-	<strong><a href="" style="font-size: 150%;">Classifying the state of sedation of patients in ICU</a></strong> November 2022 - January 2023
-	<p style="font-size: 110%;">
-	This study aimed to classify the state of sedation of patients during their hospitalizations in an
-	intensive care unit. The doctor judged between a "sedated" or "weakly sedated" state for each patient and proposed
-	medication according to this state. By studying the electroencephalographic activity (EEG) of the patients, 
-	we have tried to classify these states. This work was supervised by Laurent Oudre and Clément Dubost.
-	<p>
-	</td>
-</tr>
-<tr>
-	<td class="image-column" style="text-align: center;">
-	<a href="https://antoinertk.github.io/files/Land.pdf" target="_blank">
-	  <img src="images/lena.png" alt="Land's kernel" width="266" height="177">
-	</a>
-	</td>
-	<td>
-	<strong><a href="https://antoinertk.github.io/files/Land.pdf" target="_blank" style="font-size: 150%;">Land's kernel</a></strong> April 2022 - May 2022
-	<p style="font-size: 110%;">
-	Kernels play an important role in image processing and computer vision. They are ubiquitous in our daily lives,
-	and have many applications such as feature extraction or photomontage. In this work, we will focus on Land’s kernel 
-	and its interesting properties. This work was supervised by Enric Meinhardt-Llopis.
-	[<a href="https://antoinertk.github.io/files/Land.pdf" style="color:blue; text-decoration:underline;" target="_blank">Paper</a>]
-	[<a href="https://github.com/AntoineRtk/Land" style="color:blue; text-decoration:underline;" target="_blank">Code</a>]
 	<p>
 	</td>
 </tr>
