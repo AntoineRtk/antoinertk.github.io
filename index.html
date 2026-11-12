@@ -1,95 +1,106 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Antoine Ratouchniak</title>
-  <meta name="author" content="Antoine Ratouchniak">
-  <meta name="description" content="Antoine Ratouchniak — Applied Scientist at Amazon; former research intern at Meta FAIR and visiting researcher at NYU.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700">
-  <style>
-    body { font-family: Roboto, Arial, sans-serif; color:#333; }
-    .navbar { background:#fff; border-bottom:1px solid #eee; box-shadow:none; }
-    .navbar-brand { font-size:1.12rem; font-weight:500; }
-    .navbar .nav-link { color:#444 !important; }
-    .content { max-width:1040px; margin:50px auto 80px; }
-    h1 { font-size:2.4rem; font-weight:500; margin-bottom:24px; }
-    h2 { font-size:1.65rem; margin-top:42px; margin-bottom:22px; }
-    .profile { float:left; width:260px; margin:2px 28px 20px 0; text-align:center; }
-    .profile img { width:250px; height:auto; border-radius:5px; }
-    .contact-icons { font-size:1.2rem; margin-top:13px; white-space:nowrap; }
-    .contact-icons a { color:#333; margin:0 4px; }
-    .intro { font-size:1.18rem; line-height:1.7; text-align:justify; }
-    .pub { margin-bottom:22px; line-height:1.55; }
-    .pub-title { font-weight:600; font-size:1.11rem; }
-    .pub-meta { color:#555; }
-    .pub a { color:#007bff; }
-    footer { margin-top:48px; font-size:.8rem; text-align:right; color:#777; }
-    @media (max-width:650px) { .content { margin-top:24px; } .profile { float:none; margin:0 auto 26px; } h1 { font-size:2rem; } .intro { text-align:left; } }
-  </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Antoine Ratouchniak</title>
+<meta content="Antoine Ratouchniak" name="author"/>
+<meta content="Antoine Ratouchniak — Applied Scientist at Amazon; former research intern at Meta FAIR and visiting researcher at NYU." name="description"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" rel="stylesheet"/>
+<style>
+/* Only the new sections need styling; retain the appearance of the temp branch. */
+.profile { text-align: center; }
+.address { margin-top: 10px; }
+.profile p { font-size: 18px; padding-left: 0; }
+article p, .intro p { font-size: 20px; text-align: justify; }
+.pub { margin-bottom: 20px; }
+.pub-title { font-weight: 600; }
+.pub-meta { margin-top: 2px; line-height: 1.55; }
+.pub-meta strong { font-weight: 700; }
+.pub a { color: #007bff; }
+.contact-icons a, .contact-icons a:hover, .contact-icons a:focus {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #000;
+  display: inline;
+  padding: 0;
+  text-decoration: none;
+}
+.contact-icons { margin-top: 10px; font-size: 18px; white-space: nowrap; }
+.contact-icons a { margin: 0 5px; }
+footer { margin-top: 40px; text-align: right; font-size: 60%; }
+@media (max-width: 650px) {
+ .profile {float:none !important; margin:0 auto 20px !important;}
+ .intro p {text-align:left;}
+ .contact-icons {white-space:normal;}
+}
+</style>
 </head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="/">Antoine Ratouchniak</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fas fa-bars"></span></button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-              <div class="dropdown-menu" aria-labelledby="projectsDropdown">
-                <a class="dropdown-item" href="/projects.html">School Projects</a>
-                <a class="dropdown-item" href="/old.html">Old</a>
-              </div>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-            <li class="nav-item"><a class="nav-link" href="#academic-service">Academic Service</a></li>
-            <li class="nav-item"><a class="nav-link" href="/files/CV.pdf">CV</a></li>
-            <li class="nav-item"><a class="nav-link" href="mailto:acr9275@nyu.edu">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main class="container content">
-    <h1>Antoine Ratouchniak</h1>
-    <div class="profile">
-      <img src="/images/antoine2.png" alt="Portrait of Antoine Ratouchniak">
-      <div class="contact-icons" aria-label="Academic and social profiles">
-        <a href="mailto:acr9275@nyu.edu" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://scholar.google.com/citations?user=CqBH8vIAAAAJ" target="_blank" rel="noopener noreferrer" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-        <a href="https://github.com/AntoineRtk" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/Antoine_RtkAI" target="_blank" rel="noopener noreferrer" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/antoine-ratouchniak-a698221b7/" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="/files/CV.pdf" title="Curriculum vitae">CV</a>
-      </div>
-    </div>
-    <div class="intro">
-      <p>Hello! I am Antoine, an Applied Scientist at Amazon working on machine learning for job recommendations. I graduated with a master's degree in mathematics and artificial intelligence (MVA) from ENS Paris-Saclay.</p>
-      <p>I previously completed a research internship in the Brain &amp; AI team at <a href="https://ai.meta.com/" target="_blank" rel="noopener noreferrer">Meta FAIR</a>, under the supervision of Hubert J. Banville and Jean-Rémi King. Before that, I was a visiting researcher at <a href="https://wp.nyu.edu/videolab/" target="_blank" rel="noopener noreferrer">NYU Video Lab</a>, supervised by <a href="https://engineering.nyu.edu/faculty/yao-wang">Yao Wang</a> and <a href="https://engineering.nyu.edu/faculty/adeen-flinker">Adeen Flinker</a>.</p>
-      <p>My research interests include representation learning, self-supervised learning, multimodal models, and applications of machine learning to neuroscience.</p>
-    </div>
-    <div style="clear:both"></div>
-    <section id="publications" aria-labelledby="pub-heading">
-      <h2 id="pub-heading">Publications</h2>
-      <div class="pub"><div class="pub-title">NeuralBench: A Unifying Framework to Benchmark NeuroAI Models</div><div class="pub-meta">H. Banville et al. (including A. Ratouchniak), 2026. [<a href="https://arxiv.org/abs/2605.08495">arXiv</a>]</div></div>
-      <div class="pub"><div class="pub-title">NeuralSet: A High-Performing Python Package for Neuro-AI</div><div class="pub-meta">J.-R. King et al. (including A. Ratouchniak), 2026. [<a href="https://arxiv.org/abs/2605.03169">arXiv</a>]</div></div>
-      <div class="pub"><div class="pub-title">Prediction of Stimulation-Defined Eloquent Cortex Using Graph-Theoretical Connectivity from Electrocorticography During Presurgical Mapping</div><div class="pub-meta">N. Emami et al. (including A. Ratouchniak), 2026. [<a href="https://www.biorxiv.org/content/10.64898/2026.05.01.722255v1.full.pdf">bioRxiv</a>]</div></div>
-      <div class="pub"><div class="pub-title">Machine Learning-Based Prediction of Speech Arrest During Direct Cortical Stimulation Mapping</div><div class="pub-meta">N. Emami et al. (including A. Ratouchniak), IEEE International Conference on Neural Engineering, 2025. [<a href="https://arxiv.org/abs/2509.08703">arXiv</a>]</div></div>
-    </section>
-    <section id="academic-service" aria-labelledby="service-heading">
-      <h2 id="service-heading">Academic Service</h2>
-      <p>Reviewer — AAAI 2027 Workshop</p>
-    </section>
-    <footer>&copy; 2026 Antoine Ratouchniak. Hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</footer>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+<body class="fixed-top-nav">
+<header>
+<nav class="navbar navbar-expand-lg" id="navbar">
+<div class="container">
+<a class="navbar-brand" href="/">Antoine Ratouchniak</a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button"><span class="fas fa-bars"></span></button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="projectsDropdown" role="button">Projects</a>
+<div aria-labelledby="projectsDropdown" class="dropdown-menu">
+<a class="dropdown-item" href="/projects.html">School Projects</a>
+<a class="dropdown-item" href="/old.html">Old</a>
+</div>
+</li>
+<li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+<li class="nav-item"><a class="nav-link" href="#academic-service">Academic Service</a></li>
+<li class="nav-item"><a class="nav-link" href="/files/CV.pdf">CV</a></li>
+<li class="nav-item"><a class="nav-link" href="mailto:acr9275@nyu.edu">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+<main class="container mt-5">
+<h1 class="post-title"><span class="font-weight-bold">Antoine Ratouchniak</span></h1>
+<div class="profile float-left" style="margin-right:20px; margin-bottom:16px;">
+<img alt="Portrait of Antoine Ratouchniak" class="img-fluid z-dept-1 rounded" src="/images/antoine2.png"/>
+<div aria-label="Academic and social profiles" class="contact-icons">
+<a aria-label="Email" href="mailto:acr9275@nyu.edu" title="Email"><i class="fas fa-envelope fa-lg"></i></a>
+<a aria-label="Google Scholar" href="https://scholar.google.com/citations?user=CqBH8vIAAAAJ" rel="noopener noreferrer" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar ai-lg"></i></a>
+<a aria-label="GitHub" href="https://github.com/AntoineRtk" rel="noopener noreferrer" target="_blank" title="GitHub"><i class="fab fa-github fa-lg"></i></a>
+<a aria-label="Twitter" href="https://twitter.com/Antoine_RtkAI" rel="noopener noreferrer" target="_blank" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+<a aria-label="LinkedIn" href="https://www.linkedin.com/in/antoine-ratouchniak-a698221b7/" rel="noopener noreferrer" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+<a href="/files/CV.pdf" title="Curriculum vitae">CV</a>
+</div>
+</div>
+<div class="intro">
+<p>Hello! I am Antoine, an Applied Scientist at Amazon working on machine learning for job recommendations. I graduated with a master's degree in mathematics and artificial intelligence (MVA) from ENS Paris-Saclay.</p>
+<p>I previously completed a research internship in the Brain &amp; AI team at <a href="https://ai.meta.com/" rel="noopener noreferrer" target="_blank">Meta FAIR</a>, under the supervision of Hubert J. Banville and Jean-Rémi King. Before that, I was a visiting researcher at <a href="https://wp.nyu.edu/videolab/" rel="noopener noreferrer" target="_blank">NYU Video Lab</a>, supervised by <a href="https://engineering.nyu.edu/faculty/yao-wang">Yao Wang</a> and <a href="https://engineering.nyu.edu/faculty/adeen-flinker">Adeen Flinker</a>.</p>
+<p>My research interests include representation learning, self-supervised learning, multimodal models, and applications of machine learning to neuroscience.</p>
+</div>
+<div style="clear:both"></div>
+<section aria-labelledby="pub-heading" id="publications">
+<h2 id="pub-heading">Publications</h2>
+<div class="pub"><div class="pub-title">NeuralBench: A Unifying Framework to Benchmark NeuroAI Models</div><div class="pub-meta">H. Banville, S. d’Ascoli, S. Dahan, J. Rapin, M. Careil, Y. Benchetrit, J. Lévy, S. Panchavati, <strong>A. Ratouchniak</strong>, M. Zhang, E. Cascardi, K. Begany, T. Brooks, J.-R. King, 2026. [<a href="https://arxiv.org/abs/2605.08495" rel="noopener noreferrer" target="_blank">arXiv</a>]</div></div>
+<div class="pub"><div class="pub-title">NeuralSet: A High-Performing Python Package for Neuro-AI</div><div class="pub-meta">J.-R. King, C. Bel, L. Evanson, J. Gadonneix, S. Houhamdi, J. Lévy, J. Raugel, A. Santos Revilla, M. Zhang, J. Bonnaire, C. Caucheteux, A. Défossez, T. Desbordes, P. Diego-Simón, S. Khanna, J. Millet, P. Orhan, S. Panchavati, <strong>A. Ratouchniak</strong>, A. Thual, T. L. Brooks, K. Begany, Y. Benchetrit, M. Careil, H. Banville, S. d’Ascoli, S. Dahan, J. Rapin, 2026. [<a href="https://arxiv.org/abs/2605.03169" rel="noopener noreferrer" target="_blank">arXiv</a>]</div></div>
+<div class="pub"><div class="pub-title">Prediction of Stimulation-Defined Eloquent Cortex Using Graph-Theoretical Connectivity from Electrocorticography During Presurgical Mapping</div><div class="pub-meta">N. Emami, A. Michalak, A. Khalilian-Gourtani, <strong>A. Ratouchniak</strong>, C. Le, X. Chen, O. Devinsky, W. K. Doyle, P. Dugan, D. Friedman, Y. Wang, A. Flinker, 2026. [<a href="https://www.biorxiv.org/content/10.64898/2026.05.01.722255v1.full.pdf" rel="noopener noreferrer" target="_blank">bioRxiv</a>]</div></div>
+<div class="pub"><div class="pub-title">Machine Learning-Based Prediction of Speech Arrest During Direct Cortical Stimulation Mapping</div><div class="pub-meta">N. Emami, A. Khalilian-Gourtani, J. Qian, <strong>A. Ratouchniak</strong>, X. Chen, Y. Wang, A. Flinker, IEEE International Conference on Neural Engineering, 2025. [<a href="https://arxiv.org/abs/2509.08703" rel="noopener noreferrer" target="_blank">arXiv</a>]</div></div>
+</section>
+<section aria-labelledby="service-heading" id="academic-service">
+<h2 id="service-heading">Academic Service</h2>
+<p>Reviewer — AAAI 2027 Workshop</p>
+</section>
+<footer>© 2026 Antoine Ratouchniak. Hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</footer>
+</main>
+<script crossorigin="anonymous" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
